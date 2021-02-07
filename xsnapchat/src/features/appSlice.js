@@ -13,7 +13,7 @@ export const appSlice = createSlice({
   },
 });
 
-export const { increment, decrement, incrementByAmount } = counterSlice.actions;
+export const { incrementByAmount } = appSlice.actions;
 
 
 export const selectapp = state => state.app.value;

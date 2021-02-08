@@ -6,10 +6,11 @@ import CloseIcon from '@material-ui/icons/Close'
 import TextFieldIcon from '@material-ui/icons/TextFields'
 import CreateIcon from '@material-ui/icons/Create'
 import NoteIcon from '@material-ui/icons/Note'
-import MusicIcon from '@material-ui/icons/Music'
+import MusicNoteIcon from '@material-ui/icons/MusicNote'
 import AttachFileIcon from '@material-ui/icons/AttachFile'
 import TimerIcon from '@material-ui/icons/Timer'
 import CropIcon from '@material-ui/icons/Crop'
+import SendIcon from '@material-ui/icons/Send'
 
 import "./Preview.css"
 
@@ -42,6 +43,9 @@ function Preview() {
                 <TimerIcon/>
             </div>
             <img src={cameraImage} alt=""/>
+            <div className="preview__footer">
+                <SendIcon fontSize="small" className="preview__sendIcon"/>
+            </div>
         </div>
     )
 }

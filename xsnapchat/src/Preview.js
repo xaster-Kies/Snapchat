@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { useHistory } from 'react-router-dom';
 import { selectcameraImage } from './features/cameraSlice'
@@ -16,7 +16,7 @@ function Preview() {
 
     return (
         <div className="preview">
-            
+            <img src={cameraImage} alt=""/>
         </div>
     )
 }

@@ -7,15 +7,18 @@ export const cameraSlice = createSlice({
   },
   reducers: {
    
-    incrementByAmount: (state, action) => {
-      state.value += action.payload;
+    setCameraImage: (state, action) => {
+      state.cameraImage = action.payload;
     },
+    resetCameraImage: (state) => {
+        state.cameraImage = null;
+    }
   },
 });
 
-export const { incrementByAmount } = cameraSlice.actions;
+export const { setCameraImage, resetCameraImage } = cameraSlice.actions;
 
 
-export const selectcamera = state => state.camera.value;
+export const selectcameraImage = state => state.camera.cameraImage;
 
 export default cameraSlice.reducer;

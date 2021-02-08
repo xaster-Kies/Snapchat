@@ -21,7 +21,7 @@ function Preview() {
 
     useEffect(() => {
         if(!cameraImage) {
-            history.replaceState("/")
+            history.replace("/")
         }
     }, [cameraImage, history]);
 
@@ -44,6 +44,7 @@ function Preview() {
             </div>
             <img src={cameraImage} alt=""/>
             <div className="preview__footer">
+                <h2>Send Now</h2>
                 <SendIcon fontSize="small" className="preview__sendIcon"/>
             </div>
         </div>

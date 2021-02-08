@@ -24,6 +24,12 @@ function Preview() {
     return (
         <div className="preview">
             <CloseIcon onClick={closePreview} className='preview__close'/>
+            <div className="preview__toolbarRight">
+                <TextFieldIcons/>
+                <CreateIcon/>
+                <NoteIcon/>
+                
+            </div>
             <img src={cameraImage} alt=""/>
         </div>
     )

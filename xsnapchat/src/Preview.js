@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { useHistory } from 'react-router-dom';
 import { selectcameraImage } from './features/cameraSlice'
+import CloseIcon from '@material-ui/icons/Close'
 import "./Preview.css"
 
 function Preview() {
@@ -16,6 +17,7 @@ function Preview() {
 
     return (
         <div className="preview">
+            <CloseIcon/>
             <img src={cameraImage} alt=""/>
         </div>
     )

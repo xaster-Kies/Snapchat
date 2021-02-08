@@ -8,11 +8,11 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Preview from './Preview';
 
 function App() {
   return (
     <div className="App">
-      <WebcamCapture/>
 
       <Router>
       <div className="app__body">

@@ -30,6 +30,10 @@ function Preview() {
         history.replace('/')
     }
 
+    const sendPost = () => {
+        
+    }
+
     return (
         <div className="preview">
             <CloseIcon onClick={closePreview} className='preview__close'/>
@@ -45,7 +49,7 @@ function Preview() {
             <img src={cameraImage} alt=""/>
             <div className="preview__footer">
                 <h2>Send Now</h2>
-                <SendIcon fontSize="small" className="preview__sendIcon"/>
+                <SendIcon onClick={sendPost} fontSize="small" className="preview__sendIcon"/>
             </div>
         </div>
     )

@@ -11,6 +11,7 @@ import AttachFileIcon from '@material-ui/icons/AttachFile'
 import TimerIcon from '@material-ui/icons/Timer'
 import CropIcon from '@material-ui/icons/Crop'
 import SendIcon from '@material-ui/icons/Send'
+import { v4 as uuid } from "uuid"
 
 import "./Preview.css"
 
@@ -31,6 +32,7 @@ function Preview() {
     }
 
     const sendPost = () => {
+        const id = uuid();
         
     }
 

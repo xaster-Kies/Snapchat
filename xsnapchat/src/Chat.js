@@ -1,8 +1,8 @@
 import { Avatar } from '@material-ui/core'
 import React from 'react'
 import './Chat.css'
-import SearchIcon from "@materail-ui/icons/Search"
-import ChatBubbleIcon from "@materail-ui/icons/ChatBubble"
+import SearchIcon from "@material-ui/icons/Search"
+import ChatBubbleIcon from "@material-ui/icons/ChatBubble"
 
 
 function Chat() {

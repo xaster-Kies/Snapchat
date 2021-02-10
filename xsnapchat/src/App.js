@@ -9,6 +9,7 @@ import {
   Link
 } from "react-router-dom";
 import Preview from './Preview';
+import Chat from './Chat';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
       <Router>
       <div className="app__body">
         <Switch>
+        <Route exact path="/chats">
+            <Chat/>
+          </Route>
         <Route exact path="/preview">
             <Preview/>
           </Route>

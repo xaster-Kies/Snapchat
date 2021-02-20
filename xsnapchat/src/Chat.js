@@ -15,8 +15,11 @@ function Chat() {
                     <input placeholder="Friends" type="text"/>
                     <ChatBubbleIcon className="chats__chatsIcons" />
                 </div>
+                <div className="chat__posts">
+                    
+                </div>
             </div>
-            {/* Bubble Ware holiday */}
+           
         </div>
     )
 }

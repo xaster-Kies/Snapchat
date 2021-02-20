@@ -4,9 +4,10 @@ import './Chats.css'
 import SearchIcon from "@material-ui/icons/Search"
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble"
 import { db } from "./Firebase"
+import Chat from './Chat'
 
 
-function Chat() {
+function Chats() {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
@@ -44,4 +45,4 @@ function Chat() {
     )
 }
 
-export default Chat
+export default Chats

@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Preview from './Preview';
 import Chat from './Chat';
+import Chats from './Chats';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       <div className="app__body">
         <Switch>
         <Route exact path="/chats">
-            <Chat/>
+            <Chats/>
           </Route>
         <Route exact path="/preview">
             <Preview/>

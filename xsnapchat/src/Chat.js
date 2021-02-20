@@ -1,11 +1,22 @@
 import { Avatar } from '@material-ui/core'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Chat.css'
 import SearchIcon from "@material-ui/icons/Search"
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble"
+import { db } from "./Firebase"
 
 
 function Chat() {
+    const [posts, setPosts] = useState([]);
+
+    useEffect(() => {
+        db.collection('posts')
+        .orderBy('timestamp', 'desc')
+        .onSnapshot((snapshot) => setPosts(snapshot.docs.map((doc) => ({
+            id: doc.id,
+            data: doc.data(),
+        }))))
+    }, [])
     return (
         <div class="chats">
             <div className="chats__header">
@@ -17,7 +28,17 @@ function Chat() {
                 <ChatBubbleIcon className="chats__chatsIcons" />
             </div>
             <div className="chats__posts">
-                    
+                    {post.map(({id, data: {profilePic, username, timestamp, imageUrl, read }}) => (
+                        <Chat
+                        key={id}
+                        id={id}
+                        username={username}
+                        timestamp={timestamp}
+                        imageUrl={imageUrl}
+                        read={read}
+                        profilePic={profilePic}
+                        />
+                    ))}
              </div>
         </div>
     )

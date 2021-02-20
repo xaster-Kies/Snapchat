@@ -21,7 +21,10 @@
     display: flex;
     align-items: center;
     flex: 1;
-    padding-left: 8px;
+}
+
+.chats__posts::-webkit-scrollbar {
+    display: none;
 }
 
 .chats__search > input {
@@ -38,7 +41,9 @@
     opacity: 1;
 }
 
-.chat__posts {
+.chats__posts {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     box-shadow: 1px -7px -7px -6px rgba(0, 0, 0, 0.44);
     height: 359px;
     background-color: white;
@@ -46,4 +51,5 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: white;
+    overflow: scroll;
 }

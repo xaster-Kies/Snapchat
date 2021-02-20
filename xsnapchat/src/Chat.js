@@ -13,13 +13,12 @@ function Chat() {
                 <div className="chats__search">
                     <SearchIcon/>
                     <input placeholder="Friends" type="text"/>
-                    <ChatBubbleIcon className="chats__chatsIcons" />
                 </div>
-                <div className="chat__posts">
-                    
-                </div>
+                <ChatBubbleIcon className="chats__chatsIcons" />
             </div>
-           
+            <div className="chats__posts">
+                    
+             </div>
         </div>
     )
 }

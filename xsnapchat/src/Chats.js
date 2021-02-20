@@ -28,7 +28,7 @@ function Chat() {
                 <ChatBubbleIcon className="chats__chatsIcons" />
             </div>
             <div className="chats__posts">
-                    {post.map(({id, data: {profilePic, username, timestamp, imageUrl, read }}) => (
+                    {posts.map(({id, data: {profilePic, username, timestamp, imageUrl, read }}) => (
                         <Chat
                         key={id}
                         id={id}

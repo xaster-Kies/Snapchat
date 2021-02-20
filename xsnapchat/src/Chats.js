@@ -1,6 +1,6 @@
 import { Avatar } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
-import './Chat.css'
+import './Chats.css'
 import SearchIcon from "@material-ui/icons/Search"
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble"
 import { db } from "./Firebase"
